@@ -1,0 +1,43 @@
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	-webkit-appearance: none;
+}
+
+.posts {
+	flex-grow: 1;
+	&__search-input {
+		width: 350px;
+		&-icon {
+			padding: 3px 13px;
+			border-right: 1px solid #dee2e6;
+			img {
+				width: 15px;
+				height: 15px;
+			}
+		}
+		input {
+			border: none;
+			outline: none;
+			padding: 5px 13px;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding: 0;
+	}
+}
+
+.card-columns {
+	@media (max-width: 767.98px) {
+		column-count: 2;
+	}
+	@media (max-width: 575.98px) {
+		column-count: 1;
+	}
+}
